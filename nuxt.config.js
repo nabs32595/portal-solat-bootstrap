@@ -26,6 +26,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
+    '@nuxtjs/moment',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -36,6 +37,7 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    ['@nuxtjs/proxy', { changeOrigin: true }],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
